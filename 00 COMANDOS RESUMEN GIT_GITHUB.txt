@@ -1,0 +1,63 @@
+INICIALIZAR GIT
+git init
+
+CREAR BRANCH
+git checkout -b "mi_rama"
+
+MOVERSE ENTRE RAMAS
+git checkout "otra_rama"
+
+MOVERSE ENTRE DIRECTORIO
+cd "directorio_a_entrar"
+
+SABER DIRECTORIO EN DONDE ESTAMOS
+pwd
+
+CREAR CARPETAS
+mkdir "nueva_carpeta"
+
+CREAR ARCHIVO CON CUALQUIER EXTENSION
+touch miarchivo.txt
+
+ELIMINAR ARCHIVO
+rm "miarchivo.txt"
+
+VERIFICAR  CONTENIDO DEL DIRECTORIO
+ls
+
+VERIFICAR CONTENIDO DEL DIRECTORIO CON MAS DETALLES
+ls -lh
+
+VER CONTENIDO DE ARCHIVOS
+cat "miarchivo" (Puedo editar archivo desde VSCode)
+
+VER CONTENIDO OCULTO
+ls -la
+
+CONFIGURAR USUARIO REPO LOCAL
+git config --global user.name "usuario"
+git config --global user.email "micorreo@gmail.com"
+
+VERIFICAR USUARIO Y CORREO CONECTADO
+git config user.name
+git config user.email
+
+GIT(origin) A GITHUB (remote)
+
+git remote origin "mi_url_GitHub" (Uan vez creada la cuenta y el reposotorio en GitHub, nos brindara nuestra url)
+git remote -v (verifico si efectivamente me encuentro en el lugar de origin remote de GitHub)
+
+git add . (se agregan todos los cambios)
+git commit -m "Agregue Archivos a GitHub" (agregamos un comentario de lo que se hizo)
+git push -u origin master (empujamos a GitHub los archivos a la rama master).
+
+En caso de haber creado otra rama, debemos empujar a la rama creada.
+git push -u origin "mi_rama" (rama creada con comando: git checkout -b "mi_rama")
+
+Ir a GitHub y actualizar el repositorio para ver los cambios.
+
+Saludos y Exitos.
+
+Atte. Fernando Gambino
+
+
