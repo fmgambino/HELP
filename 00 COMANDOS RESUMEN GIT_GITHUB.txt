@@ -16,6 +16,12 @@ pwd
 CREAR CARPETAS
 mkdir "nueva_carpeta"
 
+ELIMINAR CARPETA
+rm -r "mi_carpeta"
+
+VOLVER AL DIRECTORIO ANTERIOR
+cd ..
+
 CREAR ARCHIVO CON CUALQUIER EXTENSION
 touch miarchivo.txt
 
@@ -34,6 +40,9 @@ cat "miarchivo" (Puedo editar archivo desde VSCode)
 VER CONTENIDO OCULTO
 ls -la
 
+VERIFICAR ESTADO DEL REPOSITORIO
+git status
+
 CONFIGURAR USUARIO REPO LOCAL
 git config --global user.name "usuario"
 git config --global user.email "micorreo@gmail.com"
@@ -44,7 +53,7 @@ git config user.email
 
 GIT(origin) A GITHUB (remote)
 
-git remote origin "mi_url_GitHub" (Uan vez creada la cuenta y el reposotorio en GitHub, nos brindara nuestra url)
+git remote add origin "mi_url_GitHub" (Uan vez creada la cuenta y el reposotorio en GitHub, nos brindara nuestra url)
 git remote -v (verifico si efectivamente me encuentro en el lugar de origin remote de GitHub)
 
 git add . (se agregan todos los cambios)
