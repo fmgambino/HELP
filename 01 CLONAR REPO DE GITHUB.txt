@@ -1,0 +1,39 @@
+1) INGRESAR AL REPOSITORIO DE GITHUB DEL PROYECTO A CLONAR
+
+2) Haz clic en el boton verde que dice "Clode" y veras desplegarse una ventana con varias opciones.
+3) Copiar la URL del HTTPS.
+
+4) En tu ordenador, abrir la consola de Git Bash, crear una carpeta donde se clonaran los archivos del proyecto, con el siguiente comando:
+mkdir "nueva_carpeta"
+
+5) Una vez creada la carpeta, procedemos a escribir el siguiente comando: 
+git clone "url_repo_github_a_clonar"
+
+6) Creamos un repo en nuestro GitHub (ver txt de ayuda anterior)
+
+7) Conectamos nuestro remo GIT con nuestro Repo GItHub recien creado
+
+a) En local, ingresamos a la carpeta del repo clonado, eliminamos la carpeta git y abrimos git bash.
+b) Conectos a nuestro repo nuevo:
+git init
+git checkout -b master (creamo nuestra rama)
+git config --global user.name "mi_usuario" (misma de github)
+git config --glabal user.email "mi_email" (misma de github)
+
+Nota: Hacemos un git status para verificar estado de los archivos a subir a nuestro repo GitHub
+
+c)Empujamos el repo local clonado a nuestro GitHub
+
+git add . (opcional git status para verificar que se va a agregar a nuestro repo en GitHub)
+
+git branch -M master
+git remote add origin "url_nuevo_repo" (verifico con git remote -v)
+git commit -m "Clonamos este Proyecto"
+git push -u origin master 
+
+8) Vamos a nuestro GitHub, actualizamos y veremos los archivos del repo clonado cargados a nuestro nuevo repo.
+
+Saludos y Exitos
+
+Atte. Fernando Gambino
+https://instagram.com/electronicagambino
